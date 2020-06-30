@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>SupChat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
     <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
     <script defer src="client.js"></script>
     <link rel="stylesheet" href="../css/style.css">
@@ -18,10 +19,15 @@
         <h1 class="logo">SupChat!</h1>
     </nav>
     <div class="active-status">server status : <span class="offline" id = 'active-status'>Offline</span>
-        <div class="active-users" onclick="listUsers();">Active users</div>
     </div>
     
     <div class="container">
+        <div class="active-users" onclick="listUsers();">
+            <div id = 'active-users-header'>Active users</div>
+            <!-- <div class=" active-users member-container">
+                Hey sup
+            </div> -->
+        </div>
         <div class="message-screen">
         <!-- <div class="message left"></div>
         <div class="message right"></div> -->
