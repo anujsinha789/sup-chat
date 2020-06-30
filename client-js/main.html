@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SupChat</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="client.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <audio id="audio" controls style="display:none;">
+        <source src="/client-js/sound.mp3" type="audio/mpeg">
+    </audio>
+    <nav class="logo-container">
+        <h1 class="logo">SupChat!</h1>
+    </nav>
+    <div class="active-status">server status : <span class="offline" id = 'active-status'>Offline</span>
+        <div class="active-users" onclick="listUsers();">Active users</div>
+    </div>
+    
+    <div class="container">
+        <div class="message-screen">
+        <!-- <div class="message left"></div>
+        <div class="message right"></div> -->
+        </div>
+    </div>
+    <div class="send">
+        <form action="#" id="send-container" autocomplete="off">
+            <input type="text" name="message-input" id="msg-ip">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+
+</html>

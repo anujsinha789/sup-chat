@@ -1,0 +1,210 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+  background-color:#454753;
+}
+.logo{
+    display: block;
+    width: 110px;
+    margin: 10px auto;
+    margin-left: 540px;
+    border-radius: 10px;
+    padding : 10px;
+    font-size: 50px;
+    color: #000000;
+    text-shadow: 0 0 5px rgb(0, 255, 149), 0 0 10px rgb(0, 255, 149), 0 0 15px rgb(0, 255, 149), 0 0 20px rgb(0, 255, 149), 0 0 25px rgb(0, 255, 149), 0 0 30px rgb(0, 255, 149), 0 0 35px rgb(0, 255, 149);
+    /* box-shadow: 0 0 10px #00ff4c,0 0 40px #00ff4c,0 0 80px #00ff4c; ; */
+}
+.heading{
+    display: block;
+    margin-left: 500px;
+
+}
+.container{
+    width: 100%;
+    margin: auto;
+    padding: 3px;
+}
+.message-screen{
+    display: inline-block;
+    width: 100%;
+    height: 65vh;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0,0.4);
+    overflow-y: auto;
+}
+
+.active-status{
+    display:flex;
+    width: 100%;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    max-height: 10vh;
+    padding:3px;
+    background-color: none;
+}
+.active-status .offline{
+    display: flex;
+    margin-top: -6px;
+    color : black;
+    padding : 5px;
+    border:2px solid black;
+    border-radius: 5px;
+    background-color: red;
+    box-shadow: 0 0 10px red,0 0 40px red,0 0 80px red; 
+}
+.active-status .online{
+    display: flex;
+    margin-top: -7px;
+    color : black;
+    padding : 5px;
+    border:2px solid black;
+    border-radius: 5px;
+    background-color: rgb(0, 255, 34);
+    box-shadow: 0 0 10px rgb(0, 255, 34),0 0 40px rgb(0, 255, 34),0 0 80px rgb(0, 255, 34); 
+}
+.active-users{
+    display: flex;
+    margin-top: -7px;
+    color : black;
+    padding : 5px;
+    border:2px solid black;
+    border-radius: 5px;
+    background: none;
+    color: #ccc;
+    float : left;
+    margin-left: 910px;
+}
+.active-users:hover{
+    cursor: pointer;
+    color:black;
+    background-color: rgb(0, 255, 34);
+    box-shadow: 0 0 10px rgb(0, 255, 34),0 0 40px rgb(0, 255, 34),0 0 80px rgb(0, 255, 34);
+}
+.message{
+    border: 0px solid rgb(255, 255, 255);
+    background-color: rgba(255, 143, 0, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 17px 0px;
+}
+.left{
+    margin: 2px;
+    background-color: rgb(229, 255, 0);
+    float:left;
+    clear: both;
+}
+.right{
+    background-color: rgb(0, 140, 255);
+    float:right;
+    clear: both;
+}
+.joinMsg{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(0, 255, 0);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 17px 0px;
+}
+#send-container{
+    display: block;
+    padding: 2px;
+}
+#msg-ip{
+    display: inline-block;
+    margin-top: .5px;
+    margin-left: 2px;
+    width: 90%;
+    height: 7vh;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    font-family: monospace;
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+button{
+    background: none;
+    color: #ccc;
+    border: 2px solid #338033;
+}
+.btn{
+    height: 7vh;
+    width: 105px;
+    margin-left: 10px;
+    /* background-color: rgb(255, 47, 47); */
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: monospace;
+    box-shadow: black;
+    transition: .6s;
+    overflow: hidden;
+}
+
+.btn:hover{
+    background: #00ff4c;
+    box-shadow: 0 0 10px #00ff4c,0 0 40px #00ff4c,0 0 80px #00ff4c; 
+    color:black;
+    cursor: pointer;
+}
+
+.login-container{
+    display: block;
+    margin-left: 380px;
+    margin-top: 150px;
+    width: 40%;
+    height: 20vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:20px;
+    background-color: rgba(255, 0, 0, 0.4);
+}
+#login{
+    display: block;
+    font-size: 25px;
+    padding-left: 40px;
+    padding-top: 25px;
+}
+#log{
+    display: inline-block;
+    margin: auto;
+    height: 7vh;
+    width: 50%;
+    padding: 10px;
+    font-size: 25px;
+}
+#enter{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    width: 20%;
+    height: 7vh;
+    border: 2px solid black;
+    border-radius:5px;
+    background-color: azure;
+}
+#enter:hover{
+    background-color:rgb(0, 255, 0);
+}
+#Login-Heading{
+    display: block;
+    margin-left: 560px;
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#msg-ip:hover{
+    color:black;
+    background: #ffffff;
+    box-shadow: 0 0 10px #ffffff,0 0 40px #ffffff,0 0 80px #ffffff; 
+   transition-delay: 0.1s;
+}
