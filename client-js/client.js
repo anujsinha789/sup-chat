@@ -5,7 +5,7 @@ const form = document.getElementById('send-container');
 const messageInput = document.getElementById('msg-ip');
 const messageContainer = document.querySelector('.message-screen');
 const serverStatus = document.getElementById('active-status');
-const userList = document.querySelector('active-users');
+const userList = document.querySelector('.active-users');
 
 var names = {};
 
@@ -28,6 +28,15 @@ const append = (message,position) =>{
     
 }
 
+const addUser = (name) => {
+    const userElement = document.createElement('div');
+    userElement.innerText = `${name} is active.`;
+    userElement.classList.add('active-users');
+    userElement.classList.add('member-container');
+    console.log(`${name}..`);
+    userList.append(userElement);
+}
+
 
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
@@ -45,6 +54,7 @@ socket.emit('new-user-joined',name);
 
 socket.on('user-joined',name =>{
     append(`${name} joined the chat`,'right');
+    addUser(name);
 })
 
 socket.on('receive', data =>{
